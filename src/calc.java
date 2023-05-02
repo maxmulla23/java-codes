@@ -1,29 +1,28 @@
 import java.util.Scanner;
 
 public class calc {
-    int a,b;
+    
     int c;
     public void Choice (int c){
-        
+        Scanner enter = new Scanner(System.in);
         System.out.println("1.Multiplication");
         System.out.println("2. Division");
         System.out.println("3. Addition");
         System.out.println("4. Subtraction");
-        System.out.println("enter your choice");
-        Scanner enter = new Scanner(System.in);
+        System.out.println("enter your choice" +c);
+     
         c = enter.nextInt();
-    }
-
-    public void Numbers(int a, int b, int c){
-       
+    
+        int a,b;
         System.out.println("enter first number");
-        Scanner enter = new Scanner(System.in);
         a = enter.nextInt();
         System.out.println("enter second number");
         b = enter.nextInt();
-    
+        
+
+        
         if (c == 1) {
-            System.out.println("the result of " + a + " * " + b + " is " + (a * b));
+            System.out.println("the result  is " + (a * b));
         }
         else if (c == 2) {
             System.out.println("the result of " + a + " / " + b + " is " + (a / b));
@@ -42,7 +41,7 @@ public class calc {
     public static void main(String[] args) {
       calc m = new calc();
       m.Choice(0);
-      m.Numbers(0, 0, 0);
+      
     }
 }
 
